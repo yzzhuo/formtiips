@@ -1,0 +1,212 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/bg.png) no-repeat center center !important;
+}
+
+.form-horizontal .control-group {
+    margin-bottom: 16px;
+}
+
+.wrap {
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: auto;
+}
+
+.main {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 12px auto;
+    padding: 24px 15px;
+    width: 720px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 1px 1px 12px 1px #ccc;
+    -webkit-box-shadow: 1px 1px 12px 1px #ccc;
+    -moz-box-shadow: 1px 1px 6px 12px #ccc;
+}
+
+.control-group label {
+    font-weight: 400;
+}
+
+.control-group select,
+.control-group input {
+    line-height: 20px;
+    height: auto;
+    padding: 8px;
+}
+
+@media screen and (min-width:1080px) {
+    .main {
+        width: 56%;
+    }
+
+}
+
+@media screen and (min-width:640px) {
+    .main legend {
+        margin: 0 auto;
+        padding-left: 32px;
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    .main {
+        width: 100%;
+    }
+
+    .main legend {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .controls select {
+        margin: 4px 2px;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    .form-horizontal .control-label {
+        width: 20%;
+    }
+
+    .form-horizontal .controls {
+        margin-left: 80px;
+    }
+
+    .controls input {
+        width: 78%;
+    }
+
+    .controls select,
+    .controls option {
+        width: 50%;
+    }
+
+    .protocal-check {
+        width: 8% !important;
+    }
+
+}
+
+#map-container {
+    position: relative;
+}
+
+.map-box {
+    margin: 0 auto;
+    width: 85%;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    outline: none;
+}
+
+.search {
+    z-index: 1000;
+    position: absolute;
+    top: 12px;
+    left: 8%;
+}
+
+.submit-controls {
+    margin-left: 45px;
+}
+
+.info {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 40px;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/*登陆*/
+.login-box {
+    margin: 62px 16% 0 0;
+    float: right;
+}
+
+@media screen and (max-width:768px) {
+    .login-box {
+        width: 92%;
+        margin: 72px auto;
+        float: none !important;
+    }
+
+    .login-box .control-group input {
+        width: 100%;
+    }
+
+}
+
+.login-box .controls input {
+    width: 100%;
+}
+
+.login-box .control-group {
+    margin-bottom: 4px;
+}
+
+#auth {
+    margin-right: 0;
+    width: 28%;
+}
+
+.auth-tips {
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    min-width: 170px;
+    max-width: 200px;
+    height: 42px;
+}
+
+.auth-img {
+	display: inline-block;
+    margin: 0 auto;
+    width: auto;
+    max-height: 42px;
+    cursor: pointer;
+    outline: none;
+}
+
+.auth-text {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.checkbox {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #666;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    outline: none;
+}

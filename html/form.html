@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <title>表单验证</title>
+    <meta name="author" content="xcold">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+        <script>
+              alert("对不起，您的浏览器不支持我们的网站，请升级浏览器。谢谢合作");
+        </script>
+    <![endif]-->
+</head>
+<body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onload="Javascript: resetReg()">
+    <div class="wrap">  
+        <form class="main form-horizontal" onsubmit="return check()" action="">  
+        <fieldset>
+            <!-- 账号信息 -->
+            <legend>账号信息</legend>
+            <div class="control-group">  
+                <label class="control-label">账号名</label>  
+                <div class="controls">  
+                    <input id="username" name="username" type="text" maxlength="18" placeholder="由字母、数字组合,必填,由字母开头" class="input-xlarge" required pattern="^[a-zA-Z]\w{3,17}$" title="账号名只能由字母和数字组合,且由字母开头,至少4位" onblur="Javascript:checkUserName()">  
+                </div>
+            </div>  
+            <div class="control-group">  
+                <label class="control-label">密码</label>  
+                <div class="controls">  
+                    <input id="pwd" name="pwd" type="password" maxlength="18" placeholder="由字母、数字、符号组合，必填" class="input-xlarge" required pattern="^\w{7,18}$" title="密码长度为7-18位" onblur="checkPasswords()" title="">  
+                </div>
+            </div>  
+            <div class="control-group">  
+                <label class="control-label">确认密码</label>  
+                <div class="controls">  
+                    <input id="pwd1" name="pwd1" type="password" maxlength="18" placeholder="密码长度为7-18位" class="input-xlarge" required pattern="^\w{7,18}$" title="密码长度为7-18位" onblur="checkPasswords()">  
+                </div>  
+            </div>  
+            <!-- 管理员信息 -->
+            <legend>管理员信息</legend>  
+            <div class="control-group">  
+                <label class="control-label">姓名</label>  
+                <div class="controls">  
+                    <input name="name" type="text" placeholder="中文姓名,必填" class="input-xlarge" required pattern="^[\u4e00-\u9fa5]{2,8}$" title="请输入中文姓名">  
+                </div>
+            </div>  
+            <div class="control-group">  
+                <label class="control-label" for="input01">移动电话</label>  
+                <div class="controls">  
+                    <input name="phone" type="text" placeholder="请填写此项,必填" class="input-xlarge" required pattern="^1[34578]\d{9}+$">  
+                </div>  
+            </div>  
+            <div class="control-group">  
+                <label class="control-label">邮箱</label>  
+                <div class="controls">  
+                    <input name="email" type="text" placeholder="请填写此项,必填" class="input-xlarge" required pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$" title="邮箱正确格式：xxx@xxx.xxx">  
+                </div>  
+            </div>
+            <!-- 提交 -->
+            <legend>提交注册</legend>
+            <div class="control-group">  
+                <div class="submit-controls">  
+                    <button class="btn btn-primary" type="submit" id="ok">  
+                        注 册
+                    </button>  
+                    <button class="btn btn-info" type="reset">  
+                        重 置
+                    </button>  
+                </div>  
+            </div>  
+        </fieldset>  
+        </form>  
+    </div>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/form.js"></script>
+</body>
+</html>
