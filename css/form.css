@@ -6,10 +6,6 @@ body {
     padding: 0;
 }
 
-body {
-    background: url(../img/bg.png) no-repeat center center !important;
-}
-
 .form-horizontal .control-group {
     margin-bottom: 16px;
 }
@@ -38,6 +34,15 @@ body {
     box-shadow: 1px 1px 12px 1px #ccc;
     -webkit-box-shadow: 1px 1px 12px 1px #ccc;
     -moz-box-shadow: 1px 1px 6px 12px #ccc;
+}
+
+.main label {
+    display: block;
+}
+
+.main input {
+    padding: 12px 8px;
+    width: 240px;
 }
 
 .control-group label {
@@ -107,26 +112,6 @@ body {
 
 }
 
-#map-container {
-    position: relative;
-}
-
-.map-box {
-    margin: 0 auto;
-    width: 85%;
-    height: 400px;
-    overflow: hidden;
-    border: 1px solid #eee;
-    outline: none;
-}
-
-.search {
-    z-index: 1000;
-    position: absolute;
-    top: 12px;
-    left: 8%;
-}
-
 .submit-controls {
     margin-left: 45px;
 }
@@ -140,73 +125,51 @@ body {
     border-bottom: 1px solid #e5e5e5;
 }
 
-/*登陆*/
-.login-box {
-    margin: 62px 16% 0 0;
-    float: right;
-}
-
-@media screen and (max-width:768px) {
-    .login-box {
-        width: 92%;
-        margin: 72px auto;
-        float: none !important;
-    }
-
-    .login-box .control-group input {
-        width: 100%;
-    }
-
-}
-
-.login-box .controls input {
-    width: 100%;
-}
-
-.login-box .control-group {
-    margin-bottom: 4px;
-}
-
-#auth {
-    margin-right: 0;
-    width: 28%;
-}
-
-.auth-tips {
-    display: inline-block;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    min-width: 170px;
-    max-width: 200px;
-    height: 42px;
-}
-
-.auth-img {
-	display: inline-block;
-    margin: 0 auto;
-    width: auto;
-    max-height: 42px;
-    cursor: pointer;
-    outline: none;
-}
-
-.auth-text {
-    display: inline-block;
+div.tip {
+    z-index: 1;
+    border: 1px #70BBBB solid;
+    width: 120px;
+    display: inline;
+    margin-left: 10px;
+    position: relative;
+    display: none;
+    min-height: 34px;
+    padding: 6px 12px;
     font-size: 14px;
+    background-color: #fff;
+    border-radius: 4px;
 }
 
-.checkbox {
-    margin: 0 0 8px 0;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 500;
-    color: #666;
+div.tip span {
+    z-index: 2;
+    position: absolute;
+    left: -13.8px;
+    top: 5px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-right-color: #70BBBB;
 }
 
-.checkbox input {
-    width: 18px;
-    height: 18px;
-    border: 1px solid #ddd;
-    outline: none;
+div.tip b {
+    z-index: 3;
+    position: absolute;
+    left: -11.2px;
+    top: 6px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-right-color: #fff;
+}
+
+div.tip em {
+    font-style: normal;
+    color: #90D2C9;
+}
+
+.tip-tool {
+    display: inline;
+    width: auto;
 }
