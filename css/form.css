@@ -125,22 +125,27 @@ body {
     border-bottom: 1px solid #e5e5e5;
 }
 
-div.tip {
+.tip {
     z-index: 1;
-    border: 1px #70BBBB solid;
-    width: 120px;
-    display: inline;
-    margin-left: 10px;
-    position: relative;
     display: none;
-    min-height: 34px;
+    position: relative;
+    margin-left: 10px;
     padding: 6px 12px;
+    width: auto;
+    min-height: 34px;
+    height: auto;
+    word-wrap: break-word;
     font-size: 14px;
     background-color: #fff;
+    border: 1px #70BBBB solid;
     border-radius: 4px;
 }
 
-div.tip span {
+.tip span {
+    padding: 0 4px;
+}
+
+.tip .triangle {
     z-index: 2;
     position: absolute;
     left: -13.8px;
@@ -152,7 +157,7 @@ div.tip span {
     border-right-color: #70BBBB;
 }
 
-div.tip b {
+.tip b {
     z-index: 3;
     position: absolute;
     left: -11.2px;
@@ -164,7 +169,8 @@ div.tip b {
     border-right-color: #fff;
 }
 
-div.tip em {
+.tip em {
+    max-width: 100%;
     font-style: normal;
     color: #90D2C9;
 }
@@ -172,4 +178,20 @@ div.tip em {
 .tip-tool {
     display: inline;
     width: auto;
+}
+
+.text-success {
+    color: #3c763d
+}
+
+.text-info {
+    color: #07d524
+}
+
+.text-warning {
+    color: #8a6d3b
+}
+
+.text-danger {
+    color: #a94442
 }
