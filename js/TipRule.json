@@ -1,0 +1,38 @@
+[
+    {
+       "name": "job",
+        "options": 
+            [{
+                "err": "java",
+                "right": "JAVA",
+                "level": "suggest"
+            }, {
+                "err": "前段",
+                "right": "前端",
+                "level": "warning"
+            }, {
+                "err": "play,cfree",
+                "right": "PLAY,CFREE",
+                "level": "danger"
+            }]
+        
+    },
+     {
+       "name": "skill",
+        "options": 
+            [{
+                "err": "php",
+                "right": "PHP",
+                "level": "suggest"
+            }, {
+                "err": "ps",
+                "right": "Photoshop",
+                "level": "warning"
+            }, {
+                "err": "ui",
+                "right": "UI",
+                "level": "danger"
+            }]
+        
+    }
+]
